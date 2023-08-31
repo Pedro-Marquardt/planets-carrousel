@@ -1,42 +1,84 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  /*background: url(assets/background.png);*/
+  background-color: #0f0f0ff5;
+  text-align: center;
+}
+
+.formBtn{
+  margin-top: 1.5em;
+  padding: 1em 1.5em;
+  border-radius: 1em;
+  width: 30%;
+  height: 7vh;
+  background-color: #d6d6d6;
+  border: #0f0f0ff5 solid 1px;
+  color: #0f0f0ff5;
+}
+
+.formBtn:hover {
+  background-color: transparent;
+  border: #d6d6d6 solid 1px;
+  color: #d6d6d6;
+}
+
 .slider {
-    width: 100%;
-    height: 300px; /* Ajuste a altura conforme necessário */
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-  }
-  
-  .slider img.active {
-    display: block;
-  }
-  
-  .controls {
-    position: absolute;
-    top: 50%;
-    justify-content: space-between;
-    flex-direction: row;
-    display: flex;
-    width: 100%;
-    transform: translateY(-50%);
-  }
-  
-  .controls button {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .controls button:hover {
-    color: #05F1C7; /* Ou qualquer outra cor que você preferir */
-  }
-  
+  width: 100%;
+  height: 50%;
+  top: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .img {
+  width: 20%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  display: none;
+}
+
+.slider .img.active {
+  display: block;
+}
+
+.slider img {
+  width: 100%;
+}
+
+
+#resultado {
+  color: #d6d6d6;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.controls button {
+  background-color: transparent;
+  border: none;
+  color: #d6d6d6;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.controls button:hover {
+  color: #d6d6d6bd;
+  /* Ou qualquer outra cor que você preferir */
+}
+
+.title{
+  color: #d6d6d6;
+}
